@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<Head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>Number Multiplier</title>
+</head>
+
+<body>
+	<h1>Number Multiplier <img src="http://sosleadership.com/wp-content/uploads/2014/07/multiply-hi.png" width="40" height="30"></h1>
+    <h3>Please enter two numbers to see their product</h3>
+    <p>First Number</p>
+	<input type="text" id="number1" size="40" />
+	<p>Second Number</p>
+    <input type="text" id="number2" size="40" />
+	<br/><br/>
+	<input type="button" id="button1" value="Calculate!" style="color:#31B404;border-radius:10px;" onclick="calculate(display)" />
+	<h1 style="font-size:1030%;text-align:center;color:#31B404;">
+	<div id="answer"></div>
+	</h1>
+	<script language="javascript">
+	
+	function display(variable) {
+	var node = document.getElementById('answer');
+	node.innerHTML = variable;
+	}
+    
+	function calculate(print){
+	var a = document.getElementById('number1').value;
+	var b = document.getElementById('number2').value;
+	var c = a * b;
+	print(c);}
+    
+	
+</script>
+</body>
+</html>

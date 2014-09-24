@@ -5,18 +5,76 @@
 
 <Head>
 	<title>Number Multiplier</title>
+<style>
+body {
+    background-color: Black;
+	font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;
+    text-shadow: 0 0 0.2em #8f7
+	}
+h1 {
+    color: #31B404;
+} 
+
+p {
+color: #31B404;
+}
+
+h3 {
+color: #31B404;
+}
+
+body {
+    text-align: center;
+}
+
+/* Design for button borrowed with permission from http://cssdeck.com/labs/fancy-3d-button */
+
+#button1 {
+    color: #101010;
+    font-family: 'Yanone Kaffeesatz', arial, serif;
+	text-shadow: 0 0 0.2em #888888;
+	text-decoration: none;
+    background-color: #31B404;
+    font-weight: 700;
+    font-size: 1.5em;
+    display: block;
+    padding: 4px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 9px 0px #2ca104, 0px 9px 25px #31B404;
+    -moz-box-shadow: 0px 9px 0px #2ca104, 0px 9px 25px rgba #31B404;
+    box-shadow: 0px 9px 0px #2ca104, 0px 9px 25px #31B404;
+    margin: 100px auto;
+	width: 160px;
+	text-align: center;
+	
+	-webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
+	-ms-transition: all .1s ease;
+	-o-transition: all .1s ease;
+	transition: all .1s ease;
+}
+
+#button1:active {
+    -webkit-box-shadow: 0px 3px 0px #2ca104, 0px 3px 6px #8f7;
+    -moz-box-shadow: 0px 3px 0px #2ca104, 0px 3px 6px #8f7;
+    box-shadow: 0px 3px 0px #2ca104, 0px 3px 6px #8f7;
+    position: relative;
+    top: 6px;
+}
+</style>
 </head>
 
 <body>
 	<h1>Number Multiplier <img src="http://sosleadership.com/wp-content/uploads/2014/07/multiply-hi.png" width="40" height="30"></h1>
-    <h3>Please enter two numbers to see their product</h3>
+	<h3>Please enter two numbers to see their product</h3>
     <p>First Number</p>
 	<input type="text" id="number1" size="40" />
 	<p>Second Number</p>
     <input type="text" id="number2" size="40" />
-	<br/><br/>
-	<input type="button" id="button1" value="Calculate!" style="color:#31B404;border-radius:10px;" onclick="calculate(display)" />
-	<h1 style="font-size:1030%;text-align:center;color:#31B404;">
+	<input type="button" id="button1" value="Calculate!" onclick="calculate(display)" />
+	<h1 style="font-size:800%;text-align:center;color:#31B404;">
 	<div id="answer"></div>
 	</h1>
 	<script language="javascript">
